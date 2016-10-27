@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: http://christinabrester.com
+exclude: ['README.md']
