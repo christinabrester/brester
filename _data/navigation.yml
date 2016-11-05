@@ -1,0 +1,13 @@
+# main links links
+main:
+  - title: "Publications"
+    url: /_pages/publications/ #https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+
+  - title: "Projects"
+    url: /_pages/projects/
+
+  - title: "CV"
+    url: /documents/CV_Brester.pdf
+
+  - title: "Interests"
+    url: /_pages/interests/

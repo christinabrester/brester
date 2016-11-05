@@ -1,0 +1,177 @@
+---
+layout: archive
+author_profile: true
+header:
+ image: 5295.png
+---
+
+
+{% include base_path %}
+
+<style>
+
+
+ .nelson {
+    font-size: 80%; 
+    text-align: right;
+   } 
+
+
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-item .thumbnail {
+  border: 5px solid #fff;
+}
+
+</style>
+
+<h3 class="archive__subtitle"> Travelling </h3>
+
+<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+
+<div id="mapdiv" style="margin: 0 auto; width: span(3 of 12 last); height: 0; padding-bottom: 50%;"></div>
+
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv",{
+type: "map",
+theme: "dark",
+projection: "mercator",
+panEventsEnabled : true,
+backgroundColor : "#628196",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : true
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "AL",
+		"showAsSelected": true
+	},
+	{
+		"id": "AT",
+		"showAsSelected": true
+	},
+	{
+		"id": "CZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "DE",
+		"showAsSelected": true
+	},
+	{
+		"id": "EE",
+		"showAsSelected": true
+	},
+	{
+		"id": "FI",
+		"showAsSelected": true
+	},
+	{
+		"id": "FR",
+		"showAsSelected": true
+	},
+	{
+		"id": "GR",
+		"showAsSelected": true
+	},
+	{
+		"id": "ME",
+		"showAsSelected": true
+	},
+	{
+		"id": "SI",
+		"showAsSelected": true
+	},
+	{
+		"id": "RU",
+		"showAsSelected": true
+	},
+	{
+		"id": "VN",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#B4B4B7",
+colorSolid : "#EBCB49",
+selectedColor : "#EBCB49",
+outlineColor : "#666666",
+rollOverColor : "#9EC2F7",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
+
+
+<p> 
+
+</p>
+
+<h3 class="archive__subtitle"> Languages </h3>
+<p align="center"> <i>If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart.</i> </p>
+<p class="nelson"> <b> <a href="https://en.wikipedia.org/wiki/Nelson_Mandela">Nelson Mandela</a> </b> </p>
+
+<p> 
+
+</p>
+
+
+<h3 class="archive__subtitle"> Cooking </h3>
+<p align="center"> <i>...We are what we eat...</i> </p>
+
+
+ <div class="gallery">
+      <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food1.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food2.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food3.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food4.jpg">
+      </figure>
+            <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food5.jpg">
+      </figure>
+            <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food6.jpg">
+      </figure>
+            <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food7.jpg">
+      </figure>
+            <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food8.jpg">
+        </figure>
+              <figure class="gallery-item">
+        <img class="thumbnail" src="/interests/Food9.jpg">
+      </figure>
+    </div>

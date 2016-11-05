@@ -1,0 +1,29 @@
+---
+layout: archive
+author_profile: true
+header:
+ image: 5295.png
+---
+
+  <style>
+   .projects {
+    color: #323232; /* Цвет символа */
+    font-size: 75%; /* Размер шрифта */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+   } 
+
+  </style>
+
+{% include base_path %}
+
+
+<h3 class="archive__subtitle"> Projects </h3>
+
+<p class="projects"> Comming soon... </p>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
