@@ -8,7 +8,7 @@ main:
     url: /_pages/projects/
 
   - title: "CV"
-    url: /documents/CV_Brester.pdf
+    url: /documents/CV_Brester.pdf 
 
   - title: "Interests"
     url: /_pages/interests/
