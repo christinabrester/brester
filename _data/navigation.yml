@@ -9,7 +9,6 @@ main:
 
   - title: "CV"
     url: /documents/CV_Brester.pdf
-    taget: _blank
 
   - title: "Interests"
     url: /_pages/interests/
